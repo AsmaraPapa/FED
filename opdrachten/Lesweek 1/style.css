@@ -14,9 +14,3 @@ nav>ul>li
 #wrapper {
 	padding:10px;
 }
-
-.contactgegevens .field { padding: 4px; margin:1px; background: #eee; }
-
-.contactgegevens .field label { display:inline-block; width:120px; margin-left:5px; }
-
-.contactgegevens .field input { display:inline-block; }
