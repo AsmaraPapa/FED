@@ -1,59 +1,116 @@
 <!DOCTYPE html>
-<head>
-	<title>CMD: Frontend</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="CMD" />
-    <meta name="author" content="Asmara Papa" />
-    <meta name="keywords" content="zoekterm" />
-    <link href="style.css" media="screen" rel="stylesheet" type="text/css">
-</head>
+<html>
+    <head>
+    	<title>CMD: Frontend</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="CMD" />
+        <meta name="author" content="Asmara Papa" />
+        <meta name="keywords" content="zoekterm" />
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css">
+    </head>
+https://www.cmd-amsterdam.nl/contact/
+    <body>
+        <nav>
+        	<ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="inschrijven.html">Aanmelden</a></li>
+                <li><a href="info.html">Meer informatie</a>
+            </ul>
+        </nav>
+
+        <div id="wrapper">
+            <h1>Aanmelden</h1>
+            <section>
+            	<article>
+                    <p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+                    Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+                    lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+
+                    <p>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</p>
+                    <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+                    Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+                    Voor vragen of opmerkingen kunt u <a href="https://www.cmd-amsterdam.nl/contact/">contact</a> met ons opnemen.</p>
+
+                    <h2>Contactgegevens:</h2>
+                        <form class="contactgegevens">
+                                <label for="naam">Naam: <input type="text" name="naam" required>
+                                <label for="bedrijf">Bedrijf: <input type="text" name="bedrijf" required>
+                                <label for="adres">Adres: <input type="text" name="adres">
+                                <label for="postcode">Postcode: <input type="text" name="postcode">
+                                <label for="plaats">Plaats: <input type="text" name="plaats">
+                                <label for="telefoon">Telefoon: <input type="text" name="telefoon">
+                                <label for="email">Email: <input type="email" name="email">
+                        </form>
+
+                    <h2>Ik wil mij aanmelden:</h2>
+                        <form class="keuzeaanmelden">
+                            <label for="project">Voor een project</label> <input type="radio" name="keus" id="project">
+                            <label for="stage">Als stagebedrijf</label> <input type="radio" name="keus" id="stage">
+                        </form>
 
 
-<nav>
-	<ul>
-        <li class="current"><a href="index.html">Home</a></li>
-        <li><a href="inschrijven.html">Aanmelden</a></li>
-        <li><a href="info.html">Meer informatie</a>
-    </ul>
-</nav>
+                    <h2>Project</h2>
+                        <form class="project">
+                            <label for="naam">Titel: <input type="text" name="titel">
+                            <label for="Opdrachtomschrijving">Opdrachtomschrijving: <input type="text" name="opdrachtomschrijving">
+                            <label for="doelgroepomschrijving">Doelgroepomschrijving: <input type="text" name="doelgroepomschrijving">
+                            <label for="doelstelling">Doelstelling/intentie van project: <input type="text" name="doelstelling">
+                            <label for="looptijd">Looptijd: <input type="text" name="looptijd">
+                            <label for="deadline">Deadline: <input type="date" name="deadline">
+                        </form>
 
-<div id="wrapper">
+                        <h3>Geschikt voor</h3>
+                            <form class="keuzegeschiktvoor">
+                                <select>
+                                    <option value="eerstejaars">Eerstejaars studenten</option>
+                                    <option value="tweedejaars">Tweedejaars studenten</option>
+                                    <option value="derdejaars">Derdejaars studenten</option>
+                                    <option value="afstudeer">Afstudeerders</option>
+                                    <option value="onbekend">Onbekend</option>
+                                </select>
+                                <label for="opmerking">Opmerkingen: <input type="text" name="opmerking">
+                            </form>
 
-    <h1>Aanmelden</h1>
+                    <h2>Stage</h2>
+                        Geschikt voor
+                            <form class="keuzegeschiktvoor2">
+                                <select>
+                                    <option value="tweedejaars2">Tweedejaars studenten</option>
+                                    <option value="afstudeer2">Afstudeerders</option>
+                                    <option value="onbekend2">Onbekend</option>
+                                </select>
+                            </form>
 
-    <section>
-    	<article>
-            <p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
-            Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
-            lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+                            <h3>Duur van stage</h3>
+                                <form class="duur">
+                                    <select>
+                                        <option value="10wk">10 weken</option>
+                                        <option value="20wk">20 weken</option>
+                                    </select>
+                                    <label for="startdatum">Start datum: <input type="date" name="startdatum">
+                                </form>
 
-            <p>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.
-            Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
-            Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
-            Voor vragen of opmerkingen kunt u contact [link: contact] met ons op.</p>
+                            <h3>Beschrijving werkzaamheden</h3>
+                                <form class="werkzaamheden">
+                                    <label for="werkzaamheden">Werkzaamheden: <input type="text" name="werkzaamheden">
+                                </form>
 
-            Contactgegevens:
-                <form class="contactgegevens">
-                    <div class="field">
-                        Naam: <input type="text" name="naam"><br>
-                        Bedrijf: <input type="text" name="bedrijf"><br>
-                        Adres: <input type="text" name="adres"><br>
-                        Postcode: <input type="text" name="postcode"><br>
-                        Plaats: <input type="text" name="plaats"><br>
-                        Telefoon: <input type="text" name="telefoon"><br>
-                        Email: <input type="text" name="email"><br>
-                    </div>
-                </form>
+                            <h3>Beschrijving stagebedrijf</h3>
+                                <form class="stagebedrijf">
+                                    <label for="bedrijfsnaam">Bedrijfsnaam: <input type="text" name="bedrijfsnaam">
+                                    <label for="adres">Adres: <input type="text" name="adres">
+                                    <label for="postcode">Postcode: <input type="text" name="postcode">
+                                    <label for="plaats">Plaats: <input type="text" name="plaats">
+                                    <label for="sector">Sector: <input type="text" name="sector">
+                                    <label for="core">Core Business: <input type="text" name="core">
+                                    <label for="opmerking">Opmerkingen: <input type="text" name="opmerking">
+                                </form>
+                    <input type="submit" value="submit" />
 
-            Ik wil mij aanmelden:
-                <form>
-                    <input type="radio" name="project" value="male">Voor een project<br>
-                    <input type="radio" name="stage" value="female">Als stagebedrijf
-                </form>
+                </article> 
+            </section>
 
-        </article> 
-    </section>
+        </div> <!--end wrapper-->
 
-</div> <!--end wrapper-->
-
-</body>
+    </body>
+</html>
