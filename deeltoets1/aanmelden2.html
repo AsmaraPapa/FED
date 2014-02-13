@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>CMD: Frontend</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="CMD" />
+        <meta name="author" content="Asmara Papa" />
+        <meta name="keywords" content="stage, projecten" />
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <nav>
+        	<ul>
+                <li class="current"><a href="opleiding.html">Home</a></li>
+                <li><a href="aanmelden2.html">Aanmelden</a></li>
+                <li><a href="info.html">Meer informatie</a>
+            </ul>
+        </nav>
+
+        <div id="wrapper">
+            <section>
+                <article>
+                    <h1>Aanmelden</h1>
+                    <p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+                    Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+                    lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+
+                    <cite>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</cite>
+                    
+                    <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+                    Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+                    Voor vragen of opmerkingen kunt u <a href="https://www.cmd-amsterdam.nl/contact/">contact</a> met ons opnemen.</p>
+
+                    <form>
+                        <fieldset>
+                            <legend>Contactgegevens:</legend>
+                            <label for="naam">Naam: <input type="text" name="naam" autofocus required>
+                            <label for="bedrijf">Bedrijf: <input type="text" name="bedrijf">
+                            <label for="adres">Adres: <input type="text" name="adres">
+                            <label for="postcode">Postcode: <input type="text" name="postcode">
+                            <label for="plaats">Plaats: <input type="text" name="plaats">
+                            <label for="telefoon">Telefoon: <input type="text" name="telefoon">
+                            <label for="email">Email: <input type="email" name="email" placeholder="example@gmail.com">
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Ik wil mij aanmelden</legend>
+                            <label for="project">Voor een project</label> <input type="radio" name="keus" id="project">
+                            <label for="stage">Als stagebedrijf</label> <input type="radio" name="keus" id="stage">
+                        </fieldset>
+
+
+                        <fieldset>
+                            <legend>Project</legend>
+                            <label for="naam">Titel: <input type="text" name="titel">
+                            <label for="Opdrachtomschrijving">Opdrachtomschrijving: <input type="text" name="opdrachtomschrijving">
+                            <label for="doelgroepomschrijving">Doelgroepomschrijving: <input type="text" name="doelgroepomschrijving">
+                            <label for="doelstelling">Doelstelling/intentie van project: <input type="text" name="doelstelling">
+                            <label for="looptijd">Looptijd: <input type="text" name="looptijd">
+                            <label for="deadline">Deadline: <input type="date" name="deadline">
+
+                            <legend>Geschikt voor</legend>
+                                <select>
+                                    <option value="eerstejaars">Eerstejaars studenten</option>
+                                    <option value="tweedejaars">Tweedejaars studenten</option>
+                                    <option value="derdejaars">Derdejaars studenten</option>
+                                    <option value="afstudeer">Afstudeerders</option>
+                                    <option value="onbekend">Onbekend</option>
+                                </select>
+                                <label for="opmerking">Opmerkingen: <input type="text" name="opmerking">
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Stage</legend>
+                            <legend>Geschikt voor</legend>
+                                <select>
+                                    <option value="tweedejaars2">Tweedejaars studenten</option>
+                                    <option value="afstudeer2">Afstudeerders</option>
+                                    <option value="onbekend2">Onbekend</option>
+                                </select>
+
+
+                            <legend>Duur van stage</legend>
+                                <select>
+                                    <option value="10wk">10 weken</option>
+                                    <option value="20wk">20 weken</option>
+                                </select>
+                                <label for="startdatum">Start datum: <input type="date" name="startdatum">
+
+                            <legend>Beschrijving werkzaamheden</legend>
+                                <label for="werkzaamheden">Werkzaamheden: <input type="text" name="werkzaamheden">
+
+                            <legend>Beschrijving van stagebedrijf</legend>
+                                <label for="bedrijfsnaam">Bedrijfsnaam: <input type="text" name="bedrijfsnaam">
+                                <label for="adres">Adres: <input type="text" name="adres">
+                                <label for="postcode">Postcode: <input type="text" name="postcode">
+                                <label for="plaats">Plaats: <input type="text" name="plaats">
+                                <label for="sector">Sector: <input type="text" name="sector">
+                                <label for="core">Core Business: <input type="text" name="core">
+                                <label for="opmerking">Opmerkingen: <input type="text" name="opmerking">
+                            </fieldset>
+                        <input type="submit" value="submit" />
+                    </form>
+                    
+                </article> 
+            </section>
+
+        </div> <!--end wrapper-->
+
+    </body>
+</html>
